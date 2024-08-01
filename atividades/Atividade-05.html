@@ -1,10 +1,14 @@
 <script>
 
 let nome = prompt('Digite seu nome')
-let salario = prompt('Digite seu salario')
-let porcentagem 
-let aumento
-let novoSalario
+let salario = parseFloat(prompt('Digite seu salario'))
+let percentual = 25 / 100
+let aumento = parseFloat(salario * percentual)
+let novoSalario = parseFloat(salario + aumento)
 
-
+document.write('<b>Funcionário:</b> ' + nome + '<br>')
+document.write('<b>Salário:</b> ' + salario + '<br>')
+document.write('<b>Porcentagem de aumento:</b> ' + percentual + '%' + '<br>')
+document.write('<b>Valor do aumento:</b> ' + aumento + '<br>')
+document.write('<b>Novo Salário:</b> ' + novoSalario)
 </script>
