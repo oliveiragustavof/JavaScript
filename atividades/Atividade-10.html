@@ -1,0 +1,30 @@
+<script>
+
+    let paes = prompt('Quantos pães hoje chefia?')
+    let valorPaoCD = parseFloat(0.80)
+    let valorPaoSD = parseFloat(1)
+    let precoCD = parseFloat( paes * valorPaoCD)
+    let precoSD = parseFloat( paes * valorPaoSD)
+    
+
+
+    if (paes <= 15) {
+        document.write('<table border=1px><tr><td align=center colspan="4" bgcolor=blue> <font color=white> <b>Padaria Sr.Joaquim:</b></td></tr></font>' + '<br>')
+        document.write('<tr><td><b>Promoção da padaria:</b></td><td> Fora do críterio </td><br>')
+        document.write('<tr><td>Valor Unitario:</b></td><td> R$' + valorPaoSD + '</td><br>')
+        document.write('<tr><td>Valor a pagar </td><td> R$' + precoSD)
+    }
+    else if (paes > 15) {
+        document.write('<table border=1px><tr><td align=center colspan="4" bgcolor=blue> <font color=white> <b>Padaria Sr.Joaquim:</b></td></tr></font>' + '<br>')
+        document.write('<tr><td><b>Promoção da padaria:</b></td><td> Aplicar desconto</td><br>')
+        document.write('<tr><td>Valor Unitario:</b></td><td> R$' + valorPaoCD + '</td><br>')
+        document.write('<tr><td>Valor a pagar </td><td> R$' + precoCD)
+    }
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,23 @@
+<script>
+
+    let idade = prompt('Digite sua idade')
+
+    if (idade <= 12) {
+        document.write('<table border=1px><tr><td align=center colspan="4" bgcolor=blue> <font color=white><b>Classificação Etária:</b> </td></tr></font>' + '<br>')
+        document.write('<tr><td><b>Idade:</b> </td><td>' + idade + '</td><br>')
+        document.write('<tr><td><b>Classificação:</b> </td><td> Criança </td><br>')
+    }
+    else if (idade <= 18) {
+        document.write('<table border=1px><tr><td align=center colspan="4" bgcolor=blue> <font color=white><b>Classificação Etária:</b> </td></tr></font>' + '<br>')
+        document.write('<tr><td><b>Idade:</b> </td><td>' + idade + '</td><br>')
+        document.write('<tr><td><b>Classificação:</b> </td><td> Adolescente </td><br>')
+    }
+    else if (idade >= 18) {
+        document.write('<table border=1px><tr><td align=center colspan="4" bgcolor=blue> <font color=white><b>Classificação Etária:</b> </td></tr></font>' + '<br>')
+        document.write('<tr><td><b>Idade:</b> </td><td>' + idade + '</td><br>')
+        document.write('<tr><td><b>Classificação:</b> </td><td> Adulto </td><br>')
+    }
+
+
+
+</script>
