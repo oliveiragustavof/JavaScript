@@ -1,0 +1,21 @@
+<script>
+
+
+    function dados() {
+        let nome = prompt('Digite seu nome')
+        let email = prompt('Digite seu email')
+        let telefone =Number(prompt('Seu telefone'))
+
+        document.write('<table width=200px height=20px border=1px width=100px height=50px><tr><td bgcolor=#a0c1ff align=center width=20><b>Nome: </b></td><td align=center>' + nome + '</td><br>')
+
+        document.write('<tr><td bgcolor=#a0c1ff align=center width=20><b>E-mail: </b></td><td align=center>' + email + '</td><br>') 
+
+        document.write('<tr><td bgcolor=#a0c1ff align=center width=20><b>Telefone: </b></td><td align=center>' + telefone + '</td><br>')
+
+        console.log('Nome: ' + nome)
+        console.log('E-mail: ' + email)
+        console.log('Telefone: ' + telefone)
+    }
+
+    dados()
+</script>
