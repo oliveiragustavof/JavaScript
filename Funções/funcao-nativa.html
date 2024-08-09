@@ -1,0 +1,66 @@
+<script>
+
+    /*
+Funções nativas em JavaScript
+Uma função nativa em JavaScript é uma função incorporada que já está disponível na linguagem JavaScript sem a necessidade de criar ou importar qualquer biblioteca adicional.
+ 
+Essas funções são parte do núcleo da linguagem e podem ser usadas diretamente em seu código sem a necessidade de defini-las previamente.
+*/
+    let texto2 = '  Aula javascript     '
+
+    let texto = 'Aula javascript'
+    // |A|u|l|a| |j|a|v|a|s|c |r |i |p |t |
+    // |0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|
+
+    console.log(texto.length) // comprimento de uma string
+
+    console.log(texto.charAt(5)) // mostra a letra que estiver no lugar do 5
+
+    console.log(texto.indexOf('r')) // onde aparece a letra R escrito na variavel 
+
+    console.log(texto.replace('javascript', 'culinaria')) // substitui apenas na linha a primeira palavra pela segunda
+
+    console.log(texto.substring(0, 3)) // Para aparecer apenas do 0 ao 3 , ou seja, apenas "Aul" da variavel
+
+    console.log(texto.toUpperCase()) //Converte tudo para maiúsculo
+
+    console.log(texto.toLowerCase()) //Converte para minúsculo
+
+    console.log(texto2.trim()) // retira os espaços vagos da variavel
+
+    //----------------------------------------------------
+
+    let numero = 10.35978
+    console.log(numero)
+    console.log(Math.ceil(numero)) // Arredonda o número para cima
+
+    console.log(Math.floor(numero)) // Arredonda o número para baixo
+
+    console.log(Math.round(10.5)) // para cima
+    console.log(Math.round(10.4)) // para baixo
+
+    let numeroAleatorio = Math.random() //gera numero aleatorio
+
+    console.log(numeroAleatorio)
+    console.log(Math.round(numeroAleatorio))
+
+    let numeroAleatorio2 = Math.random() * 10;
+    numeroAleatorio2 = Math.round(numeroAleatorio2);
+    console.log('Aleatorio entre 0 e 10: ' + numeroAleatorio2);
+
+    //----------------------------------------------------
+
+    let data = new Date() // aparecer hora 
+
+    console.log(data)
+
+    console.log('Dia semana: ' + data.getDay())
+
+    console.log('Dia do Mes: ' + data.getDate())
+
+    console.log('Mes: ' + data.getMonth()) // Janeiro = 0
+    console.log('Mes Corrigido: ' + (data.getMonth() + 1)) // Janeiro = 1
+
+    console.log('Ano: ' + data.getFullYear()) // Ano completo
+
+</script>
