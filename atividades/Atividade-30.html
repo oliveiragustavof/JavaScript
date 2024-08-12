@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+ 
+        function acao1(){
+            document.getElementById("lampada").src = "lampadas/ligada.png";
+        }
+ 
+        function acao2(){
+            document.getElementById("lampada").src= "lampadas/desligadaa.png";
+        }
+ 
+    </script>
+ 
+ <img id="lampada" src="lampadas/desligadaa.png">
+ <br>
+
+ <button id="lampada" onclick="acao1()">Ligar</button>
+ <button id="lampada" onclick="acao2()">Desligar</button>
+</body>
+
+</html>
