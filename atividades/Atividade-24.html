@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #box {
+            background-color: blue;
+            width: 500px;
+            height: 60px;
+            margin-left: 150px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+        function acao() {
+            let div = document.getElementById('box');
+            div.style.width = '500px';
+            div.style.height = '60px';
+            div.style.backgroundColor = 'red';
+        }
+        function acao2() {
+            let div = document.getElementById('box');
+            div.style.width = '500px';
+            div.style.height = '60px';
+            div.style.backgroundColor = 'aqua';
+            div.color = 'black'
+        }
+        function acao3() {
+            let div = document.getElementById('box');
+            div.style.width = '500px';
+            div.style.height = '60px';
+            div.style.backgroundColor = 'green';
+            div.color = 'black'
+        }
+        function acao4() {
+            let div = document.getElementById('box');
+            div.style.width = '500px';
+            div.style.height = '60px';
+            div.style.backgroundColor = 'violet';
+            div.color = 'black'
+        }
+        function acao5() {
+            let div = document.getElementById('box');
+            div.style.width = '500px';
+            div.style.height = '60px';
+            div.style.backgroundColor = 'yellow';
+            div.color = 'black'
+        }
+
+    </script>
+    <div id="box"></div>
+
+    <ul>
+        <li><button onclick="acao()">Evento Onclick:</button> acione o evento quando o mouse é clicado neste elemento
+        </li><br>
+
+        <li><button ondblclick="acao2()">Evento Ondblclick:</button>  Acione o evento quando o mouse é clicado duas vezes neste elemento</li><br>
+
+        <li><button onmouseover="acao3()"> Evento Onmouseover:</button> Acione um evento quando o mouse passar sobre este elemento </li><br>
+
+        <li><button onmouseout="acao4()">Onmouseout:</button> Acione o evento quando o mouse sair da area deste elemento
+        </li><br>
+
+        <li><button onmouseup="acao5()">Onmouseup:</button> Acione o evento quando o botão do mouse for solto sobre o
+            elemento
+    </li>
+
+</ul>
+    
+</body>
+
+</html>

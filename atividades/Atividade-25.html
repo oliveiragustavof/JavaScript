@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+    <h1>Ao pressionar "Enter" aparecerá um aviso</h1>
+    <script>
+        document.onkeydown = function (event) {
+            if (event.key === "Enter") {
+                alert('Você pressionou Enter')
+            }
+        }
+    </script>
+    <h1>Ao soltar a tecla "p" aparecerá um aviso</h1>
+    <script>
+        document.onkeyup = function (format) {
+            if (format.key === "p")
+                alert('Você soltou uma tecla "p"!')
+            document.body.style.backgroundColor = 'green'
+        }
+    </script>
+</body>
+
+</html>

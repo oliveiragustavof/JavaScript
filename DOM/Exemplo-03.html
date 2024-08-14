@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <table width=200px height=20px border=1px width=100px height=50px bgcolor="black">
+        <tr bgcolor=#a0c1ff align=center width=20>
+            <tr bgcolor="white"><td>Nome:</td>
+            <td id="linha1">Digite aqui seu nome</td></tr>
+            <script>
+                let linha1 = document.getElementById('linha1')
+                console.log(linha1)
+                linha1.textContent = prompt('Digite teu nome')
+            </script>
+            <tr bgcolor="white"><td>E-mail:</td>
+            <td id="linha2"></td></tr>
+            <script>
+                let linha2 = document.getElementById('linha2')
+                console.log(linha2)
+                linha2.textContent = prompt('Digite teu email')
+            </script>
+            <tr bgcolor="white"><td>Telefone:</td>
+            <td id="linha3"></td></tr>
+            <script>
+                let linha3 = document.getElementById('linha3')
+                console.log(linha3)
+                linha3.textContent = prompt('Digite teu telefone')
+            </script>
+        </tr>
+    </table>
+    <button onclick="window.print()">Imprimir</button>
+</body>
+
+</html>
