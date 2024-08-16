@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(231, 226, 226);
+    
+        }
+        #texto {
+            box-shadow: 1px 1px 1px 1px rgb(97, 96, 96);
+            background-color: white;
+            align-content: center;
+            border-radius: 10px;
+            width: 250px;
+            height: 240px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #botao-cadastrar {
+            background-color: green;
+            justify-content: center;
+            width: 240px;
+            height: 35px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #cadastro {
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #barras {
+            width: 230px;
+            justify-content: center;
+            margin: 5px;
+            opacity: 0.5;
+        }
+
+        .format{
+            font-weight: bold;
+            font-size: 15px;
+            border-style: none;
+        }
+
+
+    </style>
+    <main>
+    <div id="texto">
+        <div id="cadastro" class="format">Cadastro</div>
+        <div id="formulario">
+            <form action="#" name="exemplo08"></form>
+            <label class="format" for="username">Nome:</label><br>
+            <input id="barras" type="text" id="username" name="username"><br>
+
+            <label  class="format" for="username">Email:</label><br>
+            <input id="barras" type="text" id="email" name="email"><br>
+
+            <label  class="format" for="Password">Senha:</label><br>
+            <input id="barras" type="password" id="pwd" name="pwd"><br><br>
+        </div>
+        <div id="botao-cadastrar">
+            <input id="botao-cadastrar" type="submit" value="Cadastrar">
+        </div>
+
+    </div>
+    </main>
+</body>
+
+</html>

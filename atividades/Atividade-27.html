@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        #containerR1R2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #containerR3R4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #containerR5R6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #relogio1 {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            margin-top: 5px;
+        }
+
+        #relogio2 {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            box-shadow: 1px 1px 1px 1px grey;
+            border-radius: 5px;
+            width: 160px;
+            height: 50px;
+            margin-left: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #relogio3 {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            box-shadow: 1px 1px 1px 1px grey;
+            border-radius: 3px;
+            width: 190px;
+            height: 80px;
+            margin-left: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .relogio3 {
+            font-size: 30px;
+            background-color: rgb(179, 174, 174);
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #relogio4 {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            box-shadow: 1px 1px 1px 1px grey;
+            border-radius: 3px;
+            width: 190px;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .relogio4 {
+            font-size: 30px;
+            background-color: rgb(179, 174, 174);
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #relogio5 {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            box-shadow: 1px 1px 1px 1px grey;
+            border-radius: 3px;
+            width: 190px;
+            height: 80px;
+            margin-left: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            color: white;
+
+        }
+
+        .relogio5 {
+            font-size: 30px;
+            background-color: black;
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            text-align: center;
+            border-bottom: 5px solid white;
+            ;
+
+        }
+
+        #separador5 {
+            color: grey;
+            text-align: center;
+        }
+
+        #relogio6 {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            box-shadow: 1px 1px 1px 1px grey;
+            border-radius: 10px;
+            width: 190px;
+            height: 80px;
+            margin-left: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: black;
+
+        }
+
+        .relogio6 {
+            font-size: 30px;
+            background-color: white;
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
+        #separador6 {
+            color: white;
+            text-align: center;
+        }
+
+        #box1 {
+            display: block;
+            box-shadow: 1px 1px 1px 1px red;
+            width: 190px;
+            height: 100px;
+            margin-left: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+
+    <main>
+        <!-- Apenas começo relogio 1 e 2 -->
+        <div id="container">
+
+            <div id="containerR1R2">
+                <div>
+                    <div id="relogio1">
+                        <div id="horas1"></div>
+                        <span id="separador1"> : </span>
+
+                        <div id="minutos1"></div>
+                        <span id="separador1"> : </span>
+
+                        <div id="segundos1"></div>
+                    </div>
+                </div>
+
+                <!-- Relogio 2 -->
+
+                <div>
+                    <div id="relogio2">
+                        <div id="horas2"></div>
+                        <span id="separador2"> : </span>
+
+                        <div id="minutos2"></div>
+                        <span id="separador2"> : </span>
+
+                        <div id="segundos2"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- FIM relogio 1 e 2 -->
+
+            <!-- Relogio 3 -->
+            <div id="containerR3R4">
+                <div>
+                    <div>
+                        <div id="relogio3">
+                            <div id="horas3" class="relogio3"></div>
+                            <span id="separador3"> : </span>
+
+                            <div id="minutos3" class="relogio3"></div>
+                            <span id="separador3"> : </span>
+
+                            <div id="segundos3" class="relogio3"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Relogio 4 -->
+                <div>
+                    <div>
+                        <div id="box1">
+                            <div id="relogio4">
+
+                                <div id="horas4" class="relogio4"></div>
+                                <span id="separador4"> : </span>
+
+                                <div id="minutos4" class="relogio4"></div>
+                                <span id="separador4"> : </span>
+
+                                <div id="segundos4" class="relogio4"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Relogio 5 -->
+            <div id="containerR5R6">
+                <div>
+                    <div id="relogio5">
+                        <div id="horas5" class="relogio5"></div>
+                        <span id="separador5"> : </span>
+                        <div id="minutos5" class="relogio5"></div>
+                        <span id="separador5"> : </span>
+                        <div id="segundos5" class="relogio5"></div>
+                    </div>
+                </div>
+                <div>
+                    <div id="relogio6">
+                        <div id="horas6" class="relogio6"></div>
+                        <span id="separador6"> : </span>
+                        <div id="minutos6" class="relogio6"></div>
+                        <span id="separador6"> : </span>
+                        <div id="segundos6" class="relogio6"></div>
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
+
+    <!-- Parte script -->
+    <script>
+        // dias da semana
+
+        // Relogio 1
+
+        const horas1 = document.getElementById('horas1')
+        const minutos1 = document.getElementById('minutos1')
+        const segundos1 = document.getElementById('segundos1')
+        const relogio1 = setInterval(function time() {
+            let tempo = new Date()
+            let h = tempo.getHours()
+            let m = tempo.getMinutes()
+            let s = tempo.getSeconds()
+
+            if (h < 10) h = '0' + h
+            if (m < 10) m = '0' + m
+            if (s < 10) s = '0' + s
+
+            horas1.textContent = h
+            minutos1.textContent = m
+            segundos1.textContent = s
+        });
+
+        // Relogio 2
+
+        const horas2 = document.getElementById('horas2')
+        const minutos2 = document.getElementById('minutos2')
+        const segundos2 = document.getElementById('segundos2')
+        const relogio2 = setInterval(function time() {
+            let tempo2 = new Date()
+            let h = tempo2.getHours()
+            let m = tempo2.getMinutes()
+            let s = tempo2.getSeconds()
+
+            if (h < 10) h = '0' + h
+            if (m < 10) m = '0' + m
+            if (s < 10) s = '0' + s
+
+            horas2.textContent = h
+            minutos2.textContent = m
+            segundos2.textContent = s
+        });
+
+        // Relogio 3
+
+        const horas3 = document.getElementById('horas3')
+        const minutos3 = document.getElementById('minutos3')
+        const segundos3 = document.getElementById('segundos3')
+        const relogio3 = setInterval(function time() {
+            let tempo3 = new Date()
+            let h = tempo3.getHours()
+            let m = tempo3.getMinutes()
+            let s = tempo3.getSeconds()
+
+            if (h < 10) h = '0' + h
+            if (m < 10) m = '0' + m
+            if (s < 10) s = '0' + s
+
+            horas3.textContent = h
+            minutos3.textContent = m
+            segundos3.textContent = s
+        });
+
+        // Relogio 4
+
+        const horas4 = document.getElementById('horas4')
+        const minutos4 = document.getElementById('minutos4')
+        const segundos4 = document.getElementById('segundos4')
+        const relogio4 = setInterval(function time() {
+            let tempo4 = new Date()
+            let h = tempo4.getHours()
+            let m = tempo4.getMinutes()
+            let s = tempo4.getSeconds()
+
+            if (h < 10) h = '0' + h
+            if (m < 10) m = '0' + m
+            if (s < 10) s = '0' + s
+
+            horas4.textContent = h
+            minutos4.textContent = m
+            segundos4.textContent = s
+
+        });
+
+        // Relogio 5
+
+        const horas5 = document.getElementById('horas5')
+        const minutos5 = document.getElementById('minutos5')
+        const segundos5 = document.getElementById('segundos5')
+        const relogio5 = setInterval(function time() {
+            let tempo5 = new Date()
+            let h = tempo5.getHours()
+            let m = tempo5.getMinutes()
+            let s = tempo5.getSeconds()
+
+            if (h < 10) h = '0' + h
+            if (m < 10) m = '0' + m
+            if (s < 10) s = '0' + s
+
+            horas5.textContent = h
+            minutos5.textContent = m
+            segundos5.textContent = s
+
+        });
+
+        // Relogio 6
+
+        const horas6 = document.getElementById('horas6')
+        const minutos6 = document.getElementById('minutos6')
+        const segundos6 = document.getElementById('segundos6')
+        const relogio6 = setInterval(function time() {
+            let tempo6 = new Date()
+            let h = tempo6.getHours()
+            let m = tempo6.getMinutes()
+            let s = tempo6.getSeconds()
+
+            if (h < 10) h = '0' + h
+            if (m < 10) m = '0' + m
+            if (s < 10) s = '0' + s
+
+            horas6.textContent = h
+            minutos6.textContent = m
+            segundos6.textContent = s
+
+        });
+
+
+        function diaSemana() {
+            let data = new Date()
+            let dia = (data.getDay() + 1)
+            let mes = (data.getMonth() + 1)
+
+            if (dia === 1) {
+                document.write('Domingo, ' + mes + ' de ')
+            }
+            else if (dia === 2) {
+                document.write('Segunda-feira, ' + mes + ' de ')
+            }
+
+            else if (dia === 3) {
+                document.write('Terça-feira, ' + mes + ' de ')
+            }
+
+            else if (dia === 4) {
+                document.write('Quarta-feira, ' + mes + ' de ')
+            }
+
+            else if (dia === 5) {
+                document.write('Quinta-feira, ' + mes + ' de ')
+            }
+
+            else if (dia === 6) {
+                document.write('Sexta-feira, ' + mes + ' de ')
+            }
+
+            else if (dia === 7) {
+                document.write('Sábado, ' + mes + ' de ')
+            }
+
+            //-----------------------------------
+
+            if (mes === 1) {
+                document.write('Janeiro de ' + data.getFullYear())
+            }
+            else if (mes === 2) {
+                document.write('Fevereiro de ' + data.getFullYear())
+            }
+
+            else if (mes === 3) {
+                document.write('Março de ' + data.getFullYear())
+            }
+
+            else if (mes === 4) {
+                document.write('Abril de ' + data.getFullYear())
+            }
+
+            else if (mes === 5) {
+                document.write('Maio de ' + data.getFullYear())
+            }
+
+            else if (mes === 6) {
+                document.write('Junho de ' + data.getFullYear())
+            }
+
+            else if (mes === 7) {
+                document.write('Julho de ' + data.getFullYear())
+            }
+            else if (mes === 8) {
+                document.write('Agosto de ' + data.getFullYear())
+            }
+
+            else if (mes === 9) {
+                document.write('Setembro de ' + data.getFullYear())
+            }
+
+            else if (mes === 10) {
+                document.write('Outubro de ' + data.getFullYear())
+            }
+
+            else if (mes === 11) {
+                document.write('Novembro  de ' + data.getFullYear())
+            }
+
+            else if (mes === 12) {
+                document.write('Dezembro  de ' + data.getFullYear())
+            }
+        }
+    </script>
+
+</body>
+
+</html>
