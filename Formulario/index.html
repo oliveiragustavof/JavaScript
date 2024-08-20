@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <!-- Formulário de Login -->
+    <form id="formLogin" onsubmit="return validarFormulario()">
+
+<!-- Campo nome -->
+<label for="nome">Nome: </label>
+<input type="text" name="nome" id="nome">
+
+<!-- Campo E-mail -->
+<label for="email">E-mail:</label>
+<input type="email" name="email" id="email">
+
+<!-- Campo senha -->
+<label for="senha">Senha:</label>
+<input type="password" name="senha" id="senha">
+
+<!-- Botão de Enviar -->
+<input type="submit" value="Entrar">
+</form>
+
+<!-- Área de mensagem de erro -->
+<div id="mensagemErro"></div>
+
+</div>
+    <script src="validacao.js"></script>
+</body>
+</html>
